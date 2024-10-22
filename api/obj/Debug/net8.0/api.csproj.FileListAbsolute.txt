@@ -137,3 +137,6 @@ C:\Users\Nada\Desktop\User_Register_.net\api\obj\Debug\net8.0\refint\api.dll
 C:\Users\Nada\Desktop\User_Register_.net\api\obj\Debug\net8.0\api.pdb
 C:\Users\Nada\Desktop\User_Register_.net\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 C:\Users\Nada\Desktop\User_Register_.net\api\obj\Debug\net8.0\ref\api.dll
+C:\Users\Nada\Desktop\User_Register_.net\api\obj\Debug\net8.0\api.sourcelink.json
+C:\Users\Nada\Desktop\User_Register_.net\api\bin\Debug\net8.0\CloudinaryDotNet.dll
+C:\Users\Nada\Desktop\User_Register_.net\api\bin\Debug\net8.0\Newtonsoft.Json.dll

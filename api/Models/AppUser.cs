@@ -8,6 +8,7 @@ namespace api.Models
 {
     public class AppUser:IdentityUser
     {
-        
+        public string? ProfilePhotoUrl { get; set; } //store profile pic URL
+        public string? publicId { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api.Data;
 
@@ -11,9 +12,11 @@ using api.Data;
 namespace api.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    partial class ApplicationDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241022152131_AddProfilePhotoUrlToAppUser")]
+    partial class AddProfilePhotoUrlToAppUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,13 +54,13 @@ namespace api.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "8939c68e-b7b5-4d7d-a23e-5f181920e0f8",
+                            Id = "d83904fe-5dba-429a-9c41-67fd4e99b6e2",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "946f85f8-1db2-4c74-87f1-92670ec9692b",
+                            Id = "1a806aca-2d0d-4cdd-98d3-2ced27e31b9f",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -223,9 +226,6 @@ namespace api.Migrations
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("publicId")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

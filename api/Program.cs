@@ -2,6 +2,7 @@ using api.Data;
 using api.Interfaces;
 using api.Models;
 using api.Services;
+using api.Settings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -91,6 +92,8 @@ builder.Services.AddAuthentication(Options=>{
 
 builder.Services.AddAuthorization();
 builder.Services.AddScoped<ITokenService,TokenService>();
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
+builder.Services.AddScoped<ICloudinaryService,CloudinaryService>();
 
 var app = builder.Build();
 
